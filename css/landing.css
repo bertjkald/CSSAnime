@@ -51,6 +51,14 @@ body {
     animation-name: waet;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    transform: rotateY(9000deg);
+    
 }
 
 @keyframes waet {
