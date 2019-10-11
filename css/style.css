@@ -1,0 +1,155 @@
+:root {
+    --light-green: rgba(180, 10, 10, 0.8);
+    --med-green: rgba(120, 10, 10, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image: 
+        linear-gradient(to right bottom, var(--light-green), var(--med-green)),
+        url('../img/lenin.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+}
+
+.abolish{
+    color: yellow;
+}
+
+.logo-box {
+    position: absolute;
+    top: 6%;
+    left:3%;
+}
+
+.logo {
+    height: 35px;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+.btn1 {
+    display: inline-block;
+    columns: #fff;
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid white;
+    opacity: 0;
+    animation-name: waet1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    background-color: #aa0000 solid;
+}
+
+.btn2 {
+    display: inline-block;
+    columns: #fff;
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid white;
+    opacity: 0;
+    animation-name: waet2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 3s;
+    text-transform: uppercase;
+    background-color: #aa0000 solid;
+}
+
+.btn3 {
+    display: inline-block;
+    columns: #fff;
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid white;
+    opacity: 0;
+    animation-name: waet3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 5s;
+    text-transform: uppercase;
+    background-color: #aa0000 solid;
+}
+
+@keyframes waet1 {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes waet2 {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes waet3 {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+.buttons{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    animation-name: box;
+    animation-duration: 2s;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes box{
+    0% {
+        transform: translateY(-100px);
+    }
+    80% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.btn1:hover {
+    background-color: red;
+    transform: rotateX(9000000000000000000000000deg);
+    /*transform: scale(0.1);*/
+}
+.btn2:hover {
+    background-color: red;
+    transform: rotateX(9000000000000000000000000deg);
+    /*transform: scale(0.1);*/
+}
+.btn3:hover {
+    background-color: red;
+    transform: rotateX(9000000000000000000000000deg);
+    /*transform: scale(0.1);*/
+}
